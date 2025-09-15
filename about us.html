@@ -1,36 +1,197 @@
-  <!-- About Us Section -->
-  <section id="about" class="py-16 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
-        <!-- Gambar -->
-        <div>
-          <img src="Asset/graha aparna 1.jpg" 
-               alt="Graha Aparna" 
-               class="w-full h-auto rounded-2xl shadow-lg">
-        </div>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Graha Aparna Siwalankerto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      /* Parallax Hero */
+      .parallax {
+        background-image: url("Asset/gigapixel-unnamed.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+      /* Glassmorphism effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header
+      class="bg-white/90 backdrop-blur-sm shadow-md fixed w-full top-0 left-0 z-50"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <a href="index.html" class="text-2xl font-bold text-blue-700"
+          >Graha Aparna</a
+        >
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="home.html" class="hover:text-blue-600 transition">Home</a>
+          <a href="about.html" class="text-blue-600 font-semibold">About Us</a>
+          <a href="services.html" class="hover:text-blue-600 transition"
+            >Services</a
+          >
+          <a href="contact.html" class="hover:text-blue-600 transition"
+            >Contact</a
+          >
+        </nav>
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+          <span class="w-6 h-0.5 bg-gray-800"></span>
+          <span class="w-6 h-0.5 bg-gray-800"></span>
+          <span class="w-6 h-0.5 bg-gray-800"></span>
+        </button>
+      </div>
+      <div id="menu" class="hidden md:hidden bg-white shadow-md">
+        <nav class="flex flex-col space-y-4 py-4 px-6 font-medium">
+          <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+          <a href="about.html" class="text-blue-600 font-semibold">About Us</a>
+          <a href="services.html" class="hover:text-blue-600 transition"
+            >Services</a
+          >
+          <a href="contact.html" class="hover:text-blue-600 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
 
-        <!-- Teks -->
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-            About Us
-          </h2>
-          <p class="text-gray-700 leading-relaxed mb-4">
-            Graha Aparna Siwalankerto adalah hunian modern yang berlokasi di jantung Surabaya. 
-            Dengan fasilitas lengkap, akses strategis, dan desain elegan, kami menghadirkan kenyamanan 
-            dan kualitas hidup terbaik bagi setiap penghuni.
+    <!-- Hero Section with Parallax -->
+    <section
+      class="parallax relative text-white text-center flex items-center justify-center h-[80vh]"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/70 to-blue-900/30"
+      ></div>
+      <div class="relative z-10 px-6" data-aos="zoom-in">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+          Tentang Kami
+        </h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          Graha Aparna Siwalankerto menghadirkan solusi modern untuk hunian,
+          bisnis, dan pengembangan properti dengan mengutamakan inovasi,
+          kenyamanan, dan kualitas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="h-16 bg-gradient-to-b from-blue-900 to-gray-100 -mt-1"></div>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-100">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6"
+      >
+        <div data-aos="fade-right">
+          <img
+            src="https://source.unsplash.com/700x500/?modern,interior"
+            alt="Graha Aparna"
+            class="rounded-3xl shadow-2xl transform hover:scale-105 transition duration-500"
+          />
+        </div>
+        <div data-aos="fade-left">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Siapa Kami?</h2>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            Kami adalah perusahaan properti yang berfokus pada kualitas,
+            inovasi, dan kenyamanan. Graha Aparna Siwalankerto hadir untuk
+            menciptakan hunian modern yang ramah lingkungan sekaligus memberikan
+            nilai tambah bagi masyarakat.
           </p>
-          <p class="text-gray-700 leading-relaxed mb-6">
-            Website ini dirancang untuk memberikan informasi lengkap tentang profil perusahaan, 
-            layanan yang tersedia, serta kemudahan dalam menghubungi pihak pengelola. 
-            Dengan tampilan yang elegan dan responsif, website ini dapat diakses dengan mudah 
-            dari berbagai perangkat, baik smartphone, tablet, maupun desktop.
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            Dengan dukungan tim profesional dan visi jangka panjang, kami
+            berkomitmen untuk menjadi mitra terpercaya dalam setiap proyek,
+            menghadirkan ruang hidup dan usaha yang lebih baik.
           </p>
-          <a href="#services" 
-             class="px-6 py-3 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-800 transition">
-            Learn More
-          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Vision & Mission with Glassmorphism -->
+    <section
+      class="relative py-24 bg-gradient-to-r from-blue-900 to-blue-700 text-white"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-12" data-aos="fade-up">Visi & Misi</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Visi -->
+          <div
+            class="glass rounded-2xl p-10 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition"
+            data-aos="flip-left"
+          >
+            <h3 class="text-2xl font-semibold mb-4">Visi</h3>
+            <p class="leading-relaxed">
+              Menjadi perusahaan properti terdepan yang mengutamakan inovasi,
+              kenyamanan, dan keberlanjutan dalam setiap proyek.
+            </p>
+          </div>
+          <!-- Misi -->
+          <div
+            class="glass rounded-2xl p-10 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition"
+            data-aos="flip-right"
+          >
+            <h3 class="text-2xl font-semibold mb-4">Misi</h3>
+            <ul class="list-disc list-inside text-left space-y-2">
+              <li>Menghadirkan hunian modern dan ramah lingkungan.</li>
+              <li>Memberikan pelayanan terbaik dengan transparansi.</li>
+              <li>Berinovasi untuk menciptakan nilai tambah berkelanjutan.</li>
+              <li>Membangun citra profesional dan terpercaya.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+      <div
+        class="container mx-auto px-6 text-center space-y-4"
+        data-aos="fade-up"
+      >
+        <h4 class="text-lg font-semibold text-white">
+          Graha Aparna Siwalankerto
+        </h4>
+        <p class="text-sm">Membangun masa depan dengan inovasi dan kualitas.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a href="#" class="hover:text-white transition"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="hover:text-white transition"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-white transition"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <p class="text-xs text-gray-500">
+          &copy; 2025 Graha Aparna Siwalankerto. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/a2d9d6a52b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200, once: true });
+    </script>
+  </body>
+</html>
