@@ -64,39 +64,36 @@
       class="fixed w-full z-50 transition duration-300 bg-transparent"
     >
       <div
-        class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4"
+        class="mx-auto flex items-center justify-between px-4 py-4"
       >
         <!-- Logo -->
-        <div class="text-2xl font-bold text-white drop-shadow-lg">
+        <div class="text-3xl font-bold text-white drop-shadow-lg">
           Graha Aparna
         </div>
 
         <!-- Menu (desktop) -->
-        <nav class="hidden md:flex space-x-6 text-white font-medium">
-          <a href="#" class="hover:text-blue-300 transition">Home</a>
-          <a href="about us.html" class="hover:text-blue-300 transition"
-            >About Us</a
+        <nav class="hidden md:flex space-x-6 text-xl">
+          <a href="#home" class="text-white hover:text-blue-200 transition"
+            >Beranda</a
           >
-          <a href="layanan kami.html" class="hover:text-blue-300 transition"
-            >Services</a
+          <a href="#about us.html" class="text-white hover:text-blue-200 transition"
+            >Tentang Kami</a
           >
-          <a
-            href="gallery atau portofolio.html"
-            class="hover:text-blue-300 transition"
-            >Portofolio</a
+          <a href="#services" class="text-white hover:text-blue-200 transition"
+            >Layanan Kami</a
           >
-          <a href="contact.html" class="hover:text-blue-300 transition"
-            >Contact</a
+          <a href="#contact" class="text-white hover:text-blue-200 transition"
+            >Kontak</a
           >
         </nav>
 
         <!-- CTA Button -->
-        <a
+        <!-- <a
           href="#contact"
-          class="hidden md:inline-block px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition shadow-lg animate-scaleUp"
+          class="hidden md:inline-block px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition shadow-lg"
         >
           Get in Touch
-        </a>
+        </a> -->
 
         <!-- Burger menu (mobile) -->
         <div class="md:hidden">
@@ -109,19 +106,14 @@
         id="mobile-menu"
         class="hidden md:hidden flex flex-col px-4 pb-3 space-y-2 bg-white shadow"
       >
-        <a href="#" class="py-2 border-b hover:text-blue-900">Home</a>
-        <a href="about us.html" class="py-2 border-b hover:text-blue-900"
-          >About Us</a
+        <a href="#home" class="py-2 border-b hover:text-blue-900">Beranda</a>
+        <a href="#about us.html" class="py-2 border-b hover:text-blue-900"
+          >Tentang Kami</a
         >
-        <a href="layanan kami.html" class="py-2 border-b hover:text-blue-900"
-          >Services</a
+        <a href="#services" class="py-2 border-b hover:text-blue-900"
+          >Layanan Kami</a
         >
-        <a
-          href="gallery atau portofolio.html"
-          class="py-2 border-b hover:text-blue-900"
-          >Portofolio</a
-        >
-        <a href="contact.html" class="py-2 hover:text-blue-900">Contact</a>
+        <a href="#contact" class="py-2 hover:text-blue-900">Kontak</a>
         <a
           href="#contact"
           class="px-4 py-2 bg-blue-900 text-white rounded-lg text-center hover:bg-blue-800 transition"
@@ -156,17 +148,17 @@
         </p>
         <div class="mt-6 animate-fadeIn delay-300">
           <a
-            href="#about"
+            href="#about us.html"
             class="px-6 py-3 bg-blue-900 rounded-lg text-white font-medium text-lg hover:bg-blue-800 transition shadow-lg animate-scaleUp"
           >
-            Explore Now
+            Selengkapnya
           </a>
         </div>
       </div>
 
       <!-- Scroll Down Button -->
       <a
-        href="#about"
+        href="#about us.html"
         class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
       >
         <!-- Ikon panah SVG -->
@@ -187,32 +179,6 @@
       </a>
     </section>
 
-    <script>
-      // Toggle menu mobile
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const navbar = document.getElementById("navbar");
-
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      // Navbar background on scroll
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-          navbar.classList.add("bg-white", "shadow-md");
-          navbar.classList.remove("bg-transparent");
-          navbar.querySelectorAll("a").forEach((el) => {
-            el.classList.replace("text-white", "text-gray-700");
-          });
-        } else {
-          navbar.classList.add("bg-transparent");
-          navbar.classList.remove("bg-white", "shadow-md");
-          navbar.querySelectorAll("a").forEach((el) => {
-            el.classList.replace("text-gray-700", "text-white");
-          });
-        }
-      });
-    </script>
+    <script src="./js/hamburger-menu.js"></script>
   </body>
 </html>
