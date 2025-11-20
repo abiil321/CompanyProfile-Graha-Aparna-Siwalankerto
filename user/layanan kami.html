@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan - Graha Aparna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      /* Smooth navbar shadow saat scroll */
+      #navbar.scrolled {
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(6px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- NAVBAR -->
+    <header
+      id="navbar"
+      class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent"
+    >
+      <div class="mx-auto flex items-center justify-between px-4 py-4">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3 shrink-0">
+          <img
+            src="/Images/logo-graha-aparna.jpg"
+            class="h-9 w-auto object-contain sm:h-10 md:h-12"
+          />
+          <span
+            class="text-xl sm:text-2xl md:text-3xl font-semibold text-white tracking-wide drop-shadow-lg"
+          >
+            Graha Aparna
+          </span>
+        </div>
+
+        <!-- Hamburger -->
+        <button
+          onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+          class="md:hidden text-white focus:outline-none text-3xl"
+        >
+          ☰
+        </button>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex space-x-10 text-lg font-medium">
+          <a
+            href="/index.html"
+            class="text-white hover:text-gray-300 transition"
+            >Beranda</a
+          >
+          <a
+            href="./about us.html"
+            class="text-white hover:text-gray-300 transition"
+            >Tentang Kami</a
+          >
+          <a href="layanan.html" class="text-blue-300 font-semibold">Layanan</a>
+          <a
+            href="./contact.html"
+            class="text-white hover:text-gray-300 transition"
+            >Kontak</a
+          >
+        </nav>
+      </div>
+
+      <!-- Menu Mobile -->
+      <nav
+        id="mobileMenu"
+        class="hidden md:hidden bg-black/70 text-white px-6 py-4 space-y-3"
+      >
+        <a href="/index.html" class="block hover:text-blue-300">Beranda</a>
+        <a href="./about us.html" class="block hover:text-blue-300"
+          >Tentang Kami</a
+        >
+        <a href="layanan.html" class="block text-blue-300 font-semibold"
+          >Layanan</a
+        >
+        <a href="./contact.html" class="block hover:text-blue-300">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative w-full h-[65vh] md:h-[85vh]">
+      <img
+        src="/Images/gigapixel-unnamed.png"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div class="absolute inset-0 bg-black/55"></div>
+
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center text-center px-4"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
+          Layanan Kami
+        </h1>
+        <p
+          class="mt-4 text-base md:text-xl text-gray-200 max-w-3xl leading-relaxed"
+        >
+          Kami menyediakan layanan terbaik untuk memastikan kenyamanan dan
+          keamanan penghuni Graha Aparna Siwalankerto.
+        </p>
+      </div>
+    </section>
+
+    <!-- GRADIENT -->
+    <div
+      class="h-10 bg-gradient-to-b from-black/40 via-gray-700/10 to-gray-100 -mt-3"
+    ></div>
+
+    <!-- SERVICE SECTION -->
+    <section class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12"
+      >
+        Daftar Layanan
+      </h2>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12"
+      >
+        <!-- CARD TEMPLATE -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
+        >
+          <i class="fa-solid fa-shield-halved text-blue-500 text-5xl mb-5"></i>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Keamanan 24 Jam</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Dilengkapi petugas keamanan dan CCTV untuk menjaga kenyamanan
+            penghuni selama 24 jam.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
+        >
+          <i class="fa-solid fa-broom text-blue-500 text-5xl mb-5"></i>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Kebersihan Lingkungan
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Area hunian dirawat dan dibersihkan secara rutin agar selalu rapi
+            dan nyaman.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
+        >
+          <i class="fa-solid fa-wifi text-blue-500 text-5xl mb-5"></i>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Internet & Fasilitas Umum
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Internet stabil serta fasilitas pendukung tersedia untuk kebutuhan
+            sehari-hari penghuni.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
+        >
+          <i class="fa-solid fa-house text-blue-500 text-5xl mb-5"></i>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Tipe Kamar Nyaman
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Desain modern dan sirkulasi udara optimal demi kenyamanan maksimal.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
+        >
+          <i
+            class="fa-solid fa-hands-holding-circle text-blue-500 text-5xl mb-5"
+          ></i>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Pelayanan Ramah</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Pengelola memberikan pelayanan profesional dan siap membantu kapan
+            saja.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
+        >
+          <i
+            class="fa-solid fa-map-location-dot text-blue-500 text-5xl mb-5"
+          ></i>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Lokasi Strategis</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Dekat kampus, pusat makanan, transportasi, dan area penting lainnya.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DETAIL -->
+    <section class="bg-white py-14 md:py-20">
+      <div
+        class="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-14"
+      >
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-5">
+            Mengapa Memilih Kami?
+          </h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Graha Aparna Siwalankerto memberikan hunian berkualitas yang
+            mengutamakan kenyamanan, keamanan, dan fasilitas yang lengkap.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Dengan lingkungan tenang dan lokasi yang sangat strategis, hunian
+            ini menjadi pilihan ideal bagi mahasiswa, pekerja, dan keluarga
+            kecil.
+          </p>
+        </div>
+
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="/Images/Aparna-Siwalankerto.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-20">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10"
+      >
+        <div>
+          <h3 class="text-xl font-bold mb-3 text-white">Graha Aparna</h3>
+          <p class="text-gray-400 text-sm">
+            Hunian modern, strategis, dan nyaman untuk masa depan.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-white">Navigasi</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white">Beranda</a></li>
+            <li>
+              <a href="about.html" class="hover:text-white">Tentang Kami</a>
+            </li>
+            <li><a href="layanan.html" class="hover:text-white">Layanan</a></li>
+            <li><a href="kontak.html" class="hover:text-white">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3 text-gray-400">
+          <div class="flex gap-3 items-start">
+            <i class="fa-solid fa-location-dot text-white text-lg mt-1"></i>
+            <p>
+              Jl. Siwalankerto Timur V, Siwalankerto, Kec. Wonocolo, Surabaya,
+              Jawa Timur 60236
+            </p>
+          </div>
+
+          <div class="flex gap-3 items-center">
+            <i class="fa-solid fa-phone text-white text-lg"></i>
+            <p>081999973036</p>
+          </div>
+
+          <div class="flex gap-3 items-center">
+            <i class="fa-solid fa-envelope text-white text-lg"></i>
+            <p>info@grahaaparna.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-gray-500 text-sm mt-10">
+        © 2025 Graha Aparna. All rights reserved.
+      </div>
+    </footer>
+    <script src="/js/scroll.js"></script>
+  </body>
+</html>

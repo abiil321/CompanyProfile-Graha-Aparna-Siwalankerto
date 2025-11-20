@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Graha Aparna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      /* Animasi Fade */
+      .fade {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.7s ease-out;
+      }
+      .fade.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- NAVBAR -->
+    <header
+      id="navbar"
+      class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent"
+    >
+      <div class="mx-auto flex items-center justify-between px-4 py-4">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3 shrink-0">
+          <img
+            src="/Images/logo-graha-aparna.jpg"
+            class="h-8 w-auto object-contain sm:h-10 md:h-12"
+          />
+          <span
+            class="text-xl sm:text-2xl md:text-3xl font-semibold text-white drop-shadow-lg"
+          >
+            Graha Aparna
+          </span>
+        </div>
+
+        <!-- Hamburger (Mobile Only) -->
+        <button
+          onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+          class="md:hidden text-white focus:outline-none text-3xl"
+        >
+          ☰
+        </button>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex space-x-10 text-lg font-medium">
+          <a
+            href="/index.html"
+            class="text-white hover:text-gray-300 transition"
+            >Beranda</a
+          >
+          <a href="#about.html" class="text-blue-300 font-semibold"
+            >Tentang Kami</a
+          >
+          <a
+            href="./layanan kami.html"
+            class="text-white hover:text-gray-300 transition"
+            >Layanan</a
+          >
+          <a
+            href="./contact.html"
+            class="text-white hover:text-gray-300 transition"
+            >Kontak</a
+          >
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <nav
+        id="mobileMenu"
+        class="hidden md:hidden bg-black/70 text-white px-6 py-4 space-y-3"
+      >
+        <a href="/index.html" class="block hover:text-blue-300">Beranda</a>
+        <a href="#about.html" class="block text-blue-300 font-semibold"
+          >Tentang Kami</a
+        >
+        <a href="./layanan kami.html" class="block hover:text-blue-300"
+          >Layanan</a
+        >
+        <a href="./contact.html" class="block hover:text-blue-300">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="h-56 bg-cover bg-center flex items-center justify-center relative"
+      style="background-image: url('Images/bg-kontak.jpg')"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40"
+      ></div>
+      <h1
+        class="relative text-4xl md:text-5xl font-bold text-white drop-shadow-lg"
+      >
+        Kontak Kami
+      </h1>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+      <!-- INFO -->
+      <div class="fade">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Informasi Kontak</h2>
+
+        <div class="space-y-7 text-gray-700 leading-relaxed">
+          <div class="flex items-start space-x-4">
+            <i class="fa-solid fa-location-dot text-2xl text-blue-700"></i>
+            <p>
+              Jl. Siwalankerto Timur V, Siwalankerto,<br />
+              Kec. Wonocolo, Surabaya, Jawa Timur 60236
+            </p>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fa-solid fa-phone text-2xl text-blue-700"></i>
+            <p>+62 812-3456-7890</p>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fa-solid fa-envelope text-2xl text-blue-700"></i>
+            <p>grahaaparna@gmail.com</p>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fa-solid fa-clock text-2xl text-blue-700"></i>
+            <p>Senin - Sabtu, 08.00 - 17.00 WIB</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="bg-white shadow-xl rounded-2xl p-8 fade">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Kirim Pesan</h2>
+
+        <form class="space-y-5">
+          <div>
+            <label class="text-gray-700 font-medium">Nama</label>
+            <input
+              type="text"
+              class="w-full mt-1 px-4 py-3 border rounded-lg bg-gray-50 focus:ring focus:ring-blue-300"
+            />
+          </div>
+
+          <div>
+            <label class="text-gray-700 font-medium">Email</label>
+            <input
+              type="email"
+              class="w-full mt-1 px-4 py-3 border rounded-lg bg-gray-50 focus:ring focus:ring-blue-300"
+            />
+          </div>
+
+          <div>
+            <label class="text-gray-700 font-medium">Pesan</label>
+            <textarea
+              rows="4"
+              class="w-full mt-1 px-4 py-3 border rounded-lg bg-gray-50 focus:ring focus:ring-blue-300"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-700 text-white py-3 rounded-lg font-bold hover:bg-blue-800 active:scale-95 transition"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <div class="w-full h-80 fade px-6 pb-12">
+      <iframe
+        class="w-full h-full rounded-xl shadow-lg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.166361971319!2d112.7384786!3d-7.335205999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb476ab1f97d%3A0xf2dffc41839194c7!2sGraha%20Aparna!5e0!3m2!1sid!2sid!4v1763536351225!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+      // Fade animation on scroll
+      const fades = document.querySelectorAll(".fade");
+      function checkFade() {
+        fades.forEach((f) => {
+          const rect = f.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            f.classList.add("show");
+          }
+        });
+      }
+      window.addEventListener("scroll", checkFade);
+      window.addEventListener("load", checkFade);
+    </script>
+
+    <script src="/js/scroll.js"></script>
+  </body>
+</html>

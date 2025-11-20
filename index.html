@@ -63,12 +63,20 @@
       id="navbar"
       class="fixed w-full z-50 transition duration-300 bg-transparent"
     >
-      <div
-        class="mx-auto flex items-center justify-between px-4 py-4"
-      >
+      <div class="mx-auto flex items-center justify-between px-4 py-4">
+        
         <!-- Logo -->
-        <div class="text-3xl font-bold text-white drop-shadow-lg">
-          Graha Aparna
+        <div class="flex items-center space-x-3 shrink-0">
+          <img
+            src="Images/logo-graha-aparna.jpg"
+            alt="Logo Graha Aparna"
+            class="h-8 w-auto object-contain sm:h-10 md:h-12 lg:h-14"
+          />
+          <span
+            class="text-xl font-semibold text-white drop-shadow-lg sm:text-2xl md:text-3xl lg:text-4xl"
+          >
+            Graha Aparna
+          </span>
         </div>
 
         <!-- Menu (desktop) -->
@@ -76,13 +84,15 @@
           <a href="#home" class="text-white hover:text-blue-200 transition"
             >Beranda</a
           >
-          <a href="#about us.html" class="text-white hover:text-blue-200 transition"
+          <a
+            href="./user/about us.html"
+            class="text-white hover:text-blue-200 transition"
             >Tentang Kami</a
           >
-          <a href="#services" class="text-white hover:text-blue-200 transition"
-            >Layanan Kami</a
+          <a href="./user/layanan kami.html" class="text-white hover:text-blue-200 transition"
+            >Layanan</a
           >
-          <a href="#contact" class="text-white hover:text-blue-200 transition"
+          <a href="./user/contact.html" class="text-white hover:text-blue-200 transition"
             >Kontak</a
           >
         </nav>
@@ -107,25 +117,25 @@
         class="hidden md:hidden flex flex-col px-4 pb-3 space-y-2 bg-white shadow"
       >
         <a href="#home" class="py-2 border-b hover:text-blue-900">Beranda</a>
-        <a href="#about us.html" class="py-2 border-b hover:text-blue-900"
+        <a href="./user/about us.html" class="py-2 border-b hover:text-blue-900"
           >Tentang Kami</a
         >
-        <a href="#services" class="py-2 border-b hover:text-blue-900"
-          >Layanan Kami</a
+        <a href="./user/layanan kami.html" class="py-2 border-b hover:text-blue-900"
+          >Layanan</a
         >
-        <a href="#contact" class="py-2 hover:text-blue-900">Kontak</a>
+        <a href="./user/contact.html" class="py-2 hover:text-blue-900">Kontak</a>
         <a
-          href="#contact"
+          href="./user/contact.html"
           class="px-4 py-2 bg-blue-900 text-white rounded-lg text-center hover:bg-blue-800 transition"
         >
-          Get in Touch
+          Hubungi kami
         </a>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section
-      class="relative h-screen bg-[url('Asset/gigapixel-unnamed.png')] bg-cover bg-center flex items-center justify-center text-white"
+      class="relative h-screen bg-[url('Images/gigapixel-unnamed.png')] bg-cover bg-center flex items-center justify-center text-white"
     >
       <!-- Overlay Gradasi -->
       <div
@@ -136,7 +146,7 @@
         class="relative z-10 max-w-4xl mx-auto px-4 text-center animate-fadeIn"
       >
         <h1
-          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow-lg animate-slideDown"
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-lg animate-slideDown"
         >
           Graha Aparna Siwalankerto
         </h1>
@@ -148,7 +158,7 @@
         </p>
         <div class="mt-6 animate-fadeIn delay-300">
           <a
-            href="#about us.html"
+            href="./user/about us.html"
             class="px-6 py-3 bg-blue-900 rounded-lg text-white font-medium text-lg hover:bg-blue-800 transition shadow-lg animate-scaleUp"
           >
             Selengkapnya
@@ -179,6 +189,6 @@
       </a>
     </section>
 
-    <script src="./js/hamburger-menu.js"></script>
+    <script src="/js/hamburger-menu.js"></script>
   </body>
 </html>
